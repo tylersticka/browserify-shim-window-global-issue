@@ -5,8 +5,7 @@ This repository attempts to reproduce [issue 68](https://github.com/thlorenz/bro
 
 Here's how to run it:
 
-1. Install Browserify globally: `npm install -g browserify`
-2. Install local dependencies: `npm install`
-3. Run the start script: `npm start`
+1. `npm install -g browserify`
+2. `npm test`
 
-If the start script gives you trouble, run `npm run build` and then open `build/index.html` in your browser.
+If you encounter issues running `test`, you can also run `build`, `open` and/or `start` scripts. See `package.json` for more info.
