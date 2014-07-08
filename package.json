@@ -1,0 +1,22 @@
+{
+  "name": "browserify-shim-window-global-issue",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "browserify ./src/main.js -o ./build/bundle.js",
+    "open":  "open ./build/index.html",
+    "start": "npm run build && npm run open"
+  },
+  "devDependencies": {
+    "browserify": "~4.1.11",
+    "browserify-shim": "~3.6.0"
+  },
+  "browserify-shim": {
+    "./module": { "exports": null }
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}
