@@ -13,7 +13,7 @@
     "browserify-shim": "~3.6.0"
   },
   "browserify-shim": {
-    "./module": { "exports": null }
+    "./src/module.js": { "exports": null }
   },
   "browserify": {
     "transform": [
